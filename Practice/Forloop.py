@@ -38,3 +38,67 @@
 #     if(i == x):
 #         print("number",idx)
 #     idx +=1
+
+
+# for i in range(10):
+#     print(i)
+
+
+# for i in range(1,101):
+#     print(i)
+
+# for i in range(100,0,-1):
+#     print(i)
+
+
+# n = int(input("enter the number: "))
+
+# for i in range (1,11):
+#     print(n*i)
+
+#PASS STATMENT :-
+
+# for i in range(5):
+#     pass
+# print("some useful work")
+
+
+
+# wap to find the sum of first n numbers.(using while).
+
+# n = 6
+# sum = 0
+# for i in range(1,n+1):
+#    sum += i
+
+# // while loop
+
+# n = 6
+# sum = 0
+# i =1
+# while i<=n:
+#     sum +=i
+#     i +=1
+# print("total sum=", sum)
+
+
+#wap to find the factorial of first n numbers.
+
+# n = 9
+# fact = 1
+# i = 1
+# while i <= n:
+#     fact *= i
+#     i +=1
+
+# print("total fact", fact)
+
+# fact = 1
+# for i in range(1,5):
+#     fact *= i
+#     i +=1
+
+# print("total fact", fact)
+
+#wap to find the factorial of first n numbers.(using for)
+
