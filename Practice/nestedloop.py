@@ -43,4 +43,89 @@
 
 
 
+# * 
+# * * 
+# * * *
+# * * * *
+# * * * * *
+# * * * * * *
  
+
+
+# for i in range(7):
+#     for j in range(i+1):
+#      print("*" ,end=" ")
+#     print()
+
+
+# * * * * * * * 
+# * * * * * * 
+# * * * * * 
+# * * * * 
+# * * * 
+# * * 
+# * 
+
+
+# for i in range(7):
+#    for j in range(i,7):
+#        print("*",end=" ")
+#    print()
+
+#         * 
+#       * * 
+#     * * *
+#   * * * *
+# * * * * *
+
+# for i in range(5):
+#     for j in range(i+1,5):
+#         print(" ",end=" ")
+#     for j in range(i+1):
+#         print("*",end=" ")
+#     print()
+
+
+# * * * * * 
+#   * * * * 
+#     * * *
+#       * *
+#         *
+
+# for i in range(5):
+#     for j in range(i):
+#         print(" ",end=" ")
+#     for j in range(i,5):
+#         print("*",end=" ")
+#     print()
+ 
+# for i in range(5):
+#     for j in range(i,5):
+#        print(" ",end=" ")
+#     for j in range(i+1):
+#        print("*",end=" ")
+#     for i in range(i):
+#        print("*",end=" ")  
+#     print()
+
+
+
+# for i in range (5):
+#     for j in range(i+1):
+#         print(" ",end=" ")
+#     for j in range(i+1,5):
+#         print("*",end=" ")
+#     for j in range(i,5):
+#         print("*",end=" ")
+#     print()
+
+
+# for i in range(5):         
+#     for j in range(i+1): # increment
+#         print(" ",end=" ") 
+#     for j in range(i+1,5): #decerment ,value
+#         print("*",end=" ")
+#     for j in range(i,5):   #decerment
+#         print("*",end=" ")
+#     print()
+   
