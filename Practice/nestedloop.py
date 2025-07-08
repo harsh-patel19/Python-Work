@@ -111,7 +111,7 @@
 
 
 # for i in range (5):
-#     for j in range(i+1):
+#     for j in range(i+1):         
 #         print(" ",end=" ")
 #     for j in range(i+1,5):
 #         print("*",end=" ")
@@ -129,3 +129,37 @@
 #         print("*",end=" ")
 #     print()
    
+# LETS SEE HOW TO PRINT THR RIGHT TRIANGLE PATTERN OF NUMBERS.
+
+# rows = 6
+
+# for i in range(1, rows):
+#     num = 1
+#     for j in range(rows, 0, -1):
+#         if j > i :
+#             print(" ",end=" ")
+#         else:
+#             print(num, end=" ")
+#             num += 1
+#     print("")
+
+
+# word ="python"
+# x =""
+# for i in word:
+#     x += i
+#     print(x)
+
+# rows = 5
+# for i in range(0,rows +1,1):
+#     for j in range(i+1,rows+1,1):
+#         print(j, end=" ")
+#     print()
+
+def show(n):
+    if (n == 0):
+        return
+    print(n)
+    show(n-1)
+
+show(3)

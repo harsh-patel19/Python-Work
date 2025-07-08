@@ -1,0 +1,108 @@
+
+                                          ******   PYTHON ASSIGNMENT ******
+
+
+1*	Introduction to Python Theory:
+
+A.	Introduction to Python and its Features (simple, high-level, interpreted language).
+
+>	Python is a high-level dynamic programming language that is open source and free of charge. 
+>	High Demand: Popular in industries like AI, software development, finance, and cloud computing.
+>	Python has gained popularity because of its simplicity, easy syntax, and user-friendly environment.
+
+
+B.	History and evolution of Python.
+
+>	Python is a widely used general-purpose, high-level programming language. It was initially designed by Guido van Rossum in 1991 and developed by Python Software Foundation. 
+>	Python was developed by Guido van Rossum (a Dutch programmer) in the late 1980s and early nineties at the National Research Institute for      Mathematics and Computer Science in the Netherlands.
+>	the first version of Python, Python 0.9.0, in February 1991. 
+
+ 
+C.	 Advantages of using Python over other programming languages.
+
+>    Python is an easily readable and simple to understand language for developers who have never written a code in it.
+>	Python has high – performance  Libraries like NumPy and Pandas.
+>	Python is a great helper for data analysis and scientific computing, thanks to special tools like NumPy, pandas and matplotlib.
+>	The show_advantages method in this class prints out the advantages of Python.
+
+D.	 Writing and executing your first Python program.
+
+>	print("Hello World")
+
+    Output:- Hello World
+
+>   In Python, anything inside print() is displayed on the screen.
+
+    There are two things to note about print():
+
+    Everything we want to display on the screen is included inside the parentheses ().
+    The text we want to print is placed within double quotes " ".
+
+
+2*  Programming Style:
+
+A.  Understanding Python’s PEP 8 guidelines.
+
+>   PEP8 stands for Python Enhancement Proposal for writting clean, readable and maintainable code in Python Programming Language. 
+
+>   Use 4-space indentation and no tabs.
+
+    example ;
+
+     # Aligned with opening delimiter.
+
+B.  Indentation, comments, and naming conventions in Python:
+
+>   Indentation:-
+                    Whitespace is used for indentation in Python. Unlike many other programming languages which only serve to make the code easier to read, Python indentation is mandatory. One can understand it better by looking at an example of indentation in Python.
+  
+>   comment:-       Python comments start with the hash symbol # and continue to the end of the line.
+                    There are two types of comment. 1(single line comment)
+                                                    2(Multiline comment)
+
+>   naming :-       Naming conventions in Python refer to rules and guidelines for naming variables, functions, classes, and other entities in your code.
+
+                    Modules
+                    Variables
+                    Classes
+                    Exceptions
+
+C.   Writing readable and maintainable code:
+
+> Achieving clean code involves following a set of best practices and standards, such as using meaningful names, keeping functions small and focused, and using comments sparingly. Having a code base, which is readable and maintainable is essential for sustainable development.
+
+
+
+3*  Core Python Concepts:-
+
+A.  Understanding data types: integers, floats, strings, lists, tuples, dictionaries, sets.
+
+>   Integers     :- Understanding data types: integers, floats, strings, lists, tuples, dictionaries, sets.
+                 Example: 5, -10, 1000
+
+>  floats        :- Numbers with a decimal point.
+                Example: 3.14, -2.5, 0.0
+    
+>  strings       :- sequence of characters enclosed in quotes (' ', " ", or ''' ''')
+                Example: "Hello", 'Python', "123"
+
+>  lists         :- An ordered, changeable (mutable) collection. Can hold mixed data types.
+                Syntax: Square brackets []
+                Example: [1, 2, 3], ['a', 10, 3.5]
+
+> tuples        :- An ordered, unchangeable (immutable) collection.
+                Syntax: Round brackets ()
+                Example: (1, 2, 3), ("a", 10)
+
+> dictionaries   :- An unordered collection of key-value pairs.
+                Syntax: Curly braces {}, keys and values separated by :
+                Example: {"name": "John", "age": 30}
+
+
+> sets           :- An unordered, unindexed, and unique collection (no duplicates).
+                Syntax: Curly braces {} or the set() function.
+                Example: {1, 2, 3}, {"a", "b"}
+
+
+B.   Python variables and memory allocation.
+

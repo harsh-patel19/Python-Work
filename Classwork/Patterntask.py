@@ -65,25 +65,25 @@
 #     *
 #    * *
 #   * * *
-#    * *
-#     *
+# #    * *
+# #     *
 
-lines = 5
-stars = 1
-spaces = lines-1
-mid = lines//2
-for i in range(lines):
-    for k in range(spaces):
-        print(" ",end="")
-    for j in range(stars):
-        print("*",end="")
-    print()
-    if i<mid:
-        stars+=2
-        spaces-=1
-    else :
-        stars-=2
-        spaces+=1
+# lines = 5
+# stars = 1
+# spaces = lines-1
+# mid = lines//2
+# for i in range(lines):
+#     for k in range(spaces):
+#         print(" ",end="")
+#     for j in range(stars):
+#         print("*",end="")
+#     print()
+#     if i<mid:
+#         stars+=2
+#         spaces-=1
+#     else :
+#         stars-=2
+#         spaces+=1
 
     #   *
     #  * *
@@ -91,28 +91,28 @@ for i in range(lines):
     #  * *
     #   *
 
-lines = 7
-stars = 1
-spaces = lines-1
-mid = lines//2
-for i in range(lines):
-    for k in range(spaces):
-        print(" ",end="")
-    for j in range(stars):
-        #0 1 2 3 4
-        if j==0 or j==stars-1:
-            print("*",end="")
-        else : 
-            print(" ",end="")
-    print()
-    if i<mid:
-        stars+=2
-        spaces-=1
-    else :
-        stars-=2
-        spaces+=1
+# lines = 7
+# stars = 1
+# spaces = lines-1
+# mid = lines//2
+# for i in range(lines):
+#     for k in range(spaces):
+#         print(" ",end="")
+#     for j in range(stars):
+#         #0 1 2 3 4
+#         if j==0 or j==stars-1:
+#             print("*",end="")
+#         else : 
+#             print(" ",end="")
+#     print()
+#     if i<mid:
+#         stars+=2
+#         spaces-=1
+#     else :
+#         stars-=2
+#         spaces+=1
 
-# 1
+# # 1
 # 12
 # 123
 # 1234
@@ -159,6 +159,19 @@ for i in range(lines):
 # for i in range(lines,0,-1):
 #     for j in range(i,lines+1):
 #         print(j,end="")
+#     print()
+
+
+# 1 2 3 4 5 
+# 2 3 4 5 
+# 3 4 5 
+# 4 5 
+# 5 
+
+# rows = 5
+# for i in range(0,rows +1,1):
+#     for j in range(i+1,rows+1,1):
+#         print(j, end=" ")
 #     print()
 
 # 0

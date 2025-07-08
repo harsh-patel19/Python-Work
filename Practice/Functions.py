@@ -1,4 +1,5 @@
 
+
 #START THE BASIC OF THE FUNCTIONS HOW CAN USE IT ....
 
 # def Calc_sum (a,b):
@@ -77,4 +78,5 @@
 #     print(usd_val,"USD=",inr_val,"INR")
 
 # converter(10)
+
 
