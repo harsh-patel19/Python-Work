@@ -21,10 +21,16 @@ B.	History and evolution of Python.
  
 C.	 Advantages of using Python over other programming languages.
 
->    Python is an easily readable and simple to understand language for developers who have never written a code in it.
->	Python has high – performance  Libraries like NumPy and Pandas.
->	Python is a great helper for data analysis and scientific computing, thanks to special tools like NumPy, pandas and matplotlib.
->	The show_advantages method in this class prints out the advantages of Python.
+>Designed to be easy to learn and master:-
+        Clean, clear syntax
+        Very few keywords
+>Highly portable
+        Runs almost anywhere - high end servers and workstations, down to
+        windows CE
+>Uses machine independent byte-code
+        Extensible
+        Designed to be extensible using C/C++,
+        allowing access to many external libraries
 
 D.	 Writing and executing your first Python program.
 
