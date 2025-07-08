@@ -4,6 +4,7 @@
 
 1*	Introduction to Python Theory:
 
+
 A.	Introduction to Python and its Features (simple, high-level, interpreted language).
 
 >	Python is a high-level dynamic programming language that is open source and free of charge. 
@@ -41,6 +42,8 @@ D.	 Writing and executing your first Python program.
 
 2*  Programming Style:
 
+
+
 A.  Understanding Python’s PEP 8 guidelines.
 
 >   PEP8 stands for Python Enhancement Proposal for writting clean, readable and maintainable code in Python Programming Language. 
@@ -72,8 +75,8 @@ C.   Writing readable and maintainable code:
 > Achieving clean code involves following a set of best practices and standards, such as using meaningful names, keeping functions small and focused, and using comments sparingly. Having a code base, which is readable and maintainable is essential for sustainable development.
 
 
-
 3*  Core Python Concepts:-
+
 
 A.  Understanding data types: integers, floats, strings, lists, tuples, dictionaries, sets.
 
@@ -106,3 +109,112 @@ A.  Understanding data types: integers, floats, strings, lists, tuples, dictiona
 
 B.   Python variables and memory allocation.
 
+
+c.   Python operators: arithmetic, comparison, logical, bitwise
+
+>
+            | Type       | Examples          |              
+            | ---------- | ----------------- | 
+            | Arithmetic | `+ - * / % // **` |              
+            | Comparison | `== != > < >= <=` |              
+            | Logical    | `and or not`      |              
+            | Bitwise    | \`&               | 
+
+
+4*   Conditional Statements :-
+
+A.  Introduction to conditionalstatements: if, else, elif
+
+>    Conditional statements are used to make decisions in your program. Based on whether a condition is True or False, the program will execute different blocks of code.
+
+>   IF statements:-  
+                  The if statement checks a condition. If the condition is True, it runs the indented block of code.
+
+    example:-     if condition:
+                  # code to run if condition is True
+
+>   ELSE statements:-
+                The else block runs only if the if condition is False.
+
+    example:-   if condition:
+                    # code if condition is True
+                else:
+                    # code if condition is False
+
+
+>   ELIF statements:- 
+                The elif statement allows you to check multiple conditions one by one.
+
+    example:-   if condition1:
+                    # code if condition1 is True
+                elif condition2:
+                    # code if condition2 is True
+                else:
+                    # code if none of the above conditions are True
+
+
+B. Nested if-else conditions
+
+>    nested if-else is an if or else block inside another if or else block. This allows you to make more detailed decisions based on multiple conditions.
+
+>   syntex :- 
+                        if condition1:
+                            if condition2:
+                                # Code if both condition1 and condition2 are True
+                            else:
+                                 # Code if condition1 is True, but condition2 is False
+                        else:
+                             # Code if condition1 is False
+
+
+5* Looping (For, While)
+
+A. Introduction to for and while loops.
+
+>   for loop :- 
+                used when you know how many times to repeat. Used to iterate over a sequence (like a list, string, or range()).
+
+            example:-   for i in range(5):
+                            print(i)
+>   while loops :-
+                used when you want to repeat until a condition is False. Used when you want to repeat a block of code as long as a condition is True.
+
+            example:-   i = 1
+                        while i <= 5:
+                            print(i)
+                        i += 1
+
+B. How loops work in Python.
+
+>  Loops allow you to execute a block of code repeatedly as long as a condition is met or over a sequence.
+This helps avoid repeating code manually and supports automation and iteration in programs.
+
+Two Main Types of Loops:-
+
+| Loop Type | Purpose                                    |
+| --------- | ------------------------------------------ |
+| `for`     | Iterate over a sequence (like list, range) |
+| `while`   | Repeat as long as a condition is `True`    |
+
+
+C. Using loops with collections (lists, tuples, etc.)
+
+> Using for Loop with a List
+
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+> Using for Loop with a Tuple
+
+colors = ("red", "green", "blue")
+for color in colors:
+    print(color)
+
+> Using while Loop with Collections
+
+colors = ["red", "green", "blue"]
+i = 0
+while i < len(colors):
+    print(colors[i])
+    i += 1
