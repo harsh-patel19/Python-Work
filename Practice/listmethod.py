@@ -1,7 +1,8 @@
+
 # l = [10,20,30,40,50,20,"Tops",65.23,True]
 # l = list((10,20,30))
 # print(l)
-# # print(len(l))
+# print(len(l))
 # print(type(l))
 
 
@@ -18,10 +19,9 @@
 #change item value :
 # l = [10,20,30,40,50,60]
 
-# # l[2] = 300
-# # l.insert(2,300)
+# l[2] = 300
+# l.insert(2,300)
 # l.append(800)
-# print(l)
 
 # l[1:3] = []
 
