@@ -1,11 +1,11 @@
 # l = [10,20,30,40,50,20,"Tops",65.23,True]
 # l = list((10,20,30))
 # print(l)
-# # print(len(l))
+# print(len(l))
 # print(type(l))
 
 
-#Access list item
+# Access list item
 # l = ["python","java","php","android","ios"]
 # print(l[0])
 # print(l[-1])
@@ -15,7 +15,7 @@
 # print(l[::-1])
 
 
-#change item value :
+# change item value :
 # l = [10,20,30,40,50,60]
 
 # # l[2] = 300
@@ -33,18 +33,18 @@
 # print(l)
 
 
-#remove list item
+# remove list item
 # l = [10,20,30,40,50,60]
 
 # l.remove(10)
-# l.pop()
-# l.pop(1)
+# l.pop()  last the remove
+# l.pop(1) index 
 # l.clear()
 # del l
 # print(l)
 
 
-#loop list / Comprehension
+# loop list / Comprehension
 # l = ["A","B","C","D","E"]
 
 # for i in l:
