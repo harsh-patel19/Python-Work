@@ -6,16 +6,15 @@
 #     print("Not elegeble for voting")
 
 
-a = 100
-b = 200
-c = 300
+# a = 100
+# b = 200
+# c = 300
 
 # if a>b :
 #     if a>c :
 #         print("A is greater")
 #     else :
 #         print("C is greater")
-#  :
 #     if b>c:
 #         print("B is greater")
 #     else :
@@ -53,3 +52,5 @@ c = 300
 #     print("F")
 # else:
 #     print("Invalid marks")
+
+

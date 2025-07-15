@@ -1,0 +1,42 @@
+                  ***************     Python – Collections, functions and Modules   *************************
+
+THEORY :-
+
+
+Q1*  Understanding how to create and access elements in a list.
+
+
+>  Lists are used to store multiple items in a single variable.
+
+> Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+
+
+Q2*  Indexing in lists (positive and negative indexing).
+
+
+> 1. Positive Indexing
+Starts from 0.
+
+The first element is at index 0, second at 1, and so on.
+
+> 2. Negative Indexing
+Starts from -1 (last element).
+
+Helps to access elements from the end of the list.
+
+
+Q3*  Slicing a list: accessing a range of elements.
+
+
+>Slicing is used to access a range of elements from a list by specifying a start, stop, and step.
+
+> numbers = [10, 20, 30, 40, 50, 60]
+
+print(numbers[1:4])  # Output: [20, 30, 40]
+
+
+
+Q4* Sorting and reversing a list using sort(), sorted(), and reverse()
+
+>Sorts the list
+

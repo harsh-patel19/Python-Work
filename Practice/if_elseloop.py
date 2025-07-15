@@ -1,4 +1,5 @@
 # Q1*
+
 # if it,s hot..
 #     it's a hot day
 #     drink plenty of water
@@ -22,6 +23,7 @@
 #     print("it's lovely day")
 
 # Q2*
+
 # price of a house is 1$m.
 # if buyer has good credit,
 #     they need to put down 10%
@@ -52,6 +54,7 @@
 
 
 # Q3* 
+
 # # if temperature is greater than 30
 #     it's a hot day 
 # otherwise if it's less than 10
@@ -71,6 +74,7 @@
 #     print("not hot and cold weather")
 
 #Q4*
+
 # if name is less than 3 characters long 
 #     name must be at least 3 characters
 # otherwise if it's mpre than 50 characters long
@@ -181,3 +185,9 @@
 #         output += 'x'
 #     print(output)
 
+
+# ******************* LIST******************
+
+
+# name =["Harsh","Patel","Mary","john"]
+# print(name[1])

@@ -5,4 +5,7 @@ for i in range(20):
         continue
     else : 
         pass
-    print(i)
+    print(i) 
+
+
+

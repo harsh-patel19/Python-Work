@@ -1,13 +1,20 @@
 
 # print("Hello, World!")
 # print('Hello, Python')
-# Hello " World
+# # Hello " World
 # print('Hello " world')
-# print("""Hello
+# print('Hello','world')
+# # print("""Hello
 #         gfffg
 #       dfgfgf
 #       gfg
 #        Worlds""")
+
+# x = 'awesome'
+# def myfunc():
+#   x = 'fantastic'
+# myfunc()
+# print('Python is ' + x)
 
 # print("Hello",end=" ")
 # print("Python")
@@ -32,9 +39,12 @@
 # a = "Hello python hello tops".split(" ")
 # print(a)
 
+# b = "Hello Harsh Welcome back for the starting coding".split(" ")
+# print(b)
+
 # fname = "krunal"
 # lname = "jadhav"
 
-# # print("my fname is {0} and lname is {0}".format(fname,lname))
+# # # print("my fname is {0} and lname is {0}".format(fname,lname))
 
 # print(f"my fname is {fname} and lname is {lname}")

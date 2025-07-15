@@ -71,7 +71,7 @@ B.  Indentation, comments, and naming conventions in Python:
                     There are two types of comment. 1(single line comment)
                                                     2(Multiline comment)
 
->   naming :-       Naming conventions in Python refer to rules and guidelines for naming variables, functions, classes, and other entities in your code.
+>   naming :-       Naming conventions in Python refer to rules and guidelines for naming variables, functions, classes, and other entities in  your code.
 
                     Modules
                     Variables
@@ -131,6 +131,7 @@ c.   Python operators: arithmetic, comparison, logical, bitwise
 
 4*   Conditional Statements :-
 
+
 A.  Introduction to conditionalstatements: if, else, elif
 
 >    Conditional statements are used to make decisions in your program. Based on whether a condition is True or False, the program will execute different blocks of code.
@@ -163,7 +164,7 @@ A.  Introduction to conditionalstatements: if, else, elif
 
 B. Nested if-else conditions
 
->    nested if-else is an if or else block inside another if or else block. This allows you to make more detailed decisions based on multiple conditions.
+>    nested if-else is an if or else block inside another if or else block. This allows you to make more detailed decisions based on multiple      conditions.
 
 >   syntex :- 
                         if condition1:
@@ -176,6 +177,7 @@ B. Nested if-else conditions
 
 
 5* Looping (For, While)
+
 
 A. Introduction to for and while loops.
 
@@ -226,3 +228,6 @@ i = 0
 while i < len(colors):
     print(colors[i])
     i += 1
+
+
+
