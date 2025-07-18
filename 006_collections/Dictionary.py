@@ -3,7 +3,7 @@
 
 # print(subjects)
 # print(subjects['10'])
-# print(subjects.get("10"))
+# print(subjects.get("30"))
 
 student = {
     "name":"Krunal",
@@ -12,15 +12,15 @@ student = {
     "lang" : ["English","Hindi","Marathi","Gujarati"]
 }
 
-# print(student)
-# print(student.keys())
+print(student)
+# # print(student.keys())
 # print(student.values())
 # print(student.items())
 
 
-# student['name']="Krunal jadav"
-# student['name1']="Krunal jadav"
-# student.update({"phone":"123456789","address":"surat"})
+student['name']="Krunal jadav"
+student['name1']="Krunal jadav"
+student.update({"phone":"123456789","address":"surat"})
 
 
 # student.pop("name")
@@ -50,20 +50,20 @@ student = {
 #     print(i)
 #     print(j)
 
-users = {
-    "u1" : {
-        "username":"hardik",
-        "password":"hardik123"
-    }, 
-    "u2" : {
-        "username":"harsh",
-        "password":"harsh123"
-    }, 
-    "u3" : {
-        "username":"subodh",
-        "password":"subodh123"
-    }
-}
+# users = {
+#     "u1" : {
+#         "username":"hardik",
+#         "password":"hardik123"
+#     }, 
+#     "u2" : {
+#         "username":"harsh",
+#         "password":"harsh123"
+#     }, 
+#     "u3" : {
+#         "username":"subodh",
+#         "password":"subodh123"
+#     }
+# }
 
 # print(users['u1']['username'])
 
