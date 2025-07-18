@@ -171,3 +171,18 @@ Q15* Dictionary methods like keys(), values(), and items().
 >values()	Returns a list of all the values
 >items()	Returns a list of all key-value pairs (tuples)
 
+
+Q16* Defining functions in Python.
+
+> Use def to define a function.
+>Parameters go inside the parentheses.
+>Use return to send a result back (optional).
+>Call the function using its name followed by parentheses.
+
+
+Q17* Anonymous functions (lambda functions).
+
+>You can assign a lambda to a variable.
+>It can take any number of arguments, but only one expression (no multiple statements).
+
+> lambda arguments: expression
