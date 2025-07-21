@@ -1,4 +1,44 @@
 
+# def greet():
+#     print("Hello, world!")
+# greet()
+
+# Hello, world!
+
+# def greet(name):
+#     print("Hello,",name)
+# greet("Harsh")
+
+# Hello, Harsh
+
+# def add(a, b):
+#     return a + b
+# result = add(5,3)
+# print(result)
+
+# def power(base, exponent=2):
+#     return  base** exponent
+# print(power(4))
+# print(power(2,3))
+
+# def total(*args):
+#     return sum(args)
+# print(total(1,2,3,4))
+
+# def show_info(**kwargs):
+#     for key, value in kwargs.items():
+#         print(key, ":", value)
+# show_info(name="Harsh", age=22)
+
+
+
+
+
+
+
+
+
+
 
 #START THE BASIC OF THE FUNCTIONS HOW CAN USE IT ....
 
