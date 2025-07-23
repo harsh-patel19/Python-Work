@@ -184,5 +184,26 @@ Q17* Anonymous functions (lambda functions).
 
 >You can assign a lambda to a variable.
 >It can take any number of arguments, but only one expression (no multiple statements).
-
 > lambda arguments: expression
+
+Q18* Introduction to Python modules and importing modules.
+
+> A module is simply a file containing Python code (functions, classes, variables) that you can reuse in other Python programs.
+> math, random, and datetime are built-in modules in Python.
+
+
+Q19* Standard library modules: math, random.
+
+> math Module :- The math module provides access to mathematical functions and constants.
+> random Module :- The random module is used to generate random numbers or choose random elements.
+
+Q20* Creating custom modules.
+
+> A custom module is simply a Python file (.py) that contains functions, classes, or variables you create — so you can reuse them in other programs.
+
+> Code Reusability
+> Better Organization
+> Easier Maintenance
+> Separation of Concerns
+
+
