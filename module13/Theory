@@ -203,8 +203,8 @@ Two Main Types of Loops:-
 
 | Loop Type | Purpose                                    |
 | --------- | ------------------------------------------ |
-| `for`     | Iterate over a sequence (like list, range) |
-| `while`   | Repeat as long as a condition is `True`    |
+|  for     | Iterate over a sequence (like list, range)  |
+|  while   | Repeat as long as a condition is  True      |
 
 
 C. Using loops with collections (lists, tuples, etc.)
@@ -325,7 +325,64 @@ Does nothing. It's a placeholder used when a statement is required syntactically
 
 9* String Manipulation
 
+
 A.  Understanding how to access and manipulate strings.
 
 >  Strings in Python are sequences of characters, and you can access, slice, and manipulate them in powerful ways.
+
+>text ="hello world"
+print(text.upper())
+print(text.lower())
+print(text.title())
+print(text.captalize) .
+
+
+B. Basic operations: concatenation, repetition, string methods (upper(), lower(), etc.)
+
+>  upper():=
+print(text.upper())
+
+>  lower():=
+print(text.lower())
+
+>  reprat and strip()
+print((text.strip()+"!")*2)
+
+
+C. String slicing.
+
+> String slicing is a way to extract parts (substrings) of a string using a specific syntax.
+
+
+
+10* Advanced Python (map(), reduce(), filter(), Closures and Decorators)
+
+A. How functional programming works in Python.
+
+>Easier to test and debug
+>Reduces side effects and bugs
+>More concise and readable for data processing
+
+B. Using map(), reduce(), and filter() functions for processing data.
+
+> map(function,itreable)
+Applies a function to each item in an iterable (like a list).
+
+>reduce(function, iterable)
+Applies a function cumulatively to reduce the iterable to a single value.
+
+>filter(function, iterable)
+Applies a function cumulatively to reduce the iterable to a single value.
+
+
+C. introduction to closures and decorators
+
+> closures:-
+A closure is a function defined inside another function that remembers the variables from the outer function, even if the outer function has finished executing.
+
+> Decorator:-
+A decorator is a function that modifies or enhances another function without changing its actual code.
+It’s a design pattern built using closures.
+
+
 
