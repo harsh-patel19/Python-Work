@@ -1,0 +1,388 @@
+
+                                          ******   PYTHON ASSIGNMENT ******
+
+
+1*	Introduction to Python Theory:
+
+
+A.	Introduction to Python and its Features (simple, high-level, interpreted language).
+
+>python is a very simple & easy language.
+>free & open source
+>high level dynamic programming language
+>developed by Guido van Rossum. 
+>High Demand: Popular in industries like AI, software development, finance, and cloud computing.
+
+
+B.	History and evolution of Python.
+
+>	Python is a widely used general-purpose, high-level programming language. It was initially designed by Guido van Rossum in 1991 and developed by Python Software Foundation. 
+>	Python was developed by Guido van Rossum (a Dutch programmer) in the late 1980s and early nineties at the National Research Institute for Mathematics and Computer Science in the Netherlands.
+>	the first version of Python, Python 0.9.0, in February 1991. 
+
+ 
+C.	 Advantages of using Python over other programming languages.
+
+>Designed to be easy to learn and master:-
+        Clean, clear syntax
+        Very few keywords
+>Highly portable
+        Runs almost anywhere - high end servers and workstations, down to
+        windows CE
+>Uses machine independent byte-code
+        Extensible
+        Designed to be extensible using C/C++,
+        allowing access to many external libraries
+
+D.	 Writing and executing your first Python program.
+
+>	print("Hello World")
+
+    Output:- Hello World
+
+>   In Python, anything inside print() is displayed on the screen.
+
+    There are two things to note about print():
+
+    Everything we want to display on the screen is included inside the parentheses ().
+    The text we want to print is placed within double quotes " ".
+
+
+2*  Programming Style:
+
+
+
+A.  Understanding Python’s PEP 8 guidelines.
+
+>   PEP8 stands for Python Enhancement Proposal for writting clean, readable and maintainable code in Python Programming Language. 
+
+>   Use 4-space indentation and no tabs.
+
+    example ;
+
+    # Aligned with opening delimiter.
+
+B.  Indentation, comments, and naming conventions in Python:
+
+>   Indentation:-
+                    Whitespace is used for indentation in Python. Unlike many other programming languages which only serve to make the code easier to read, Python indentation is mandatory. One can understand it better by looking at an example of indentation in Python.
+  
+>   comment:-       Python comments start with the hash symbol # and continue to the end of the line.
+                    There are two types of comment. 1(single line comment)
+                                                    2(Multiline comment)
+
+>   naming :-       Naming conventions in Python refer to rules and guidelines for naming variables, functions, classes, and other entities in  your code.
+
+                    Modules
+                    Variables
+                    Classes
+                    Exceptions
+
+C.   Writing readable and maintainable code:
+
+> Achieving clean code involves following a set of best practices and standards, such as using meaningful names, keeping functions small and focused, and using comments sparingly. Having a code base, which is readable and maintainable is essential for sustainable development.
+
+
+3*  Core Python Concepts:-
+
+
+A.  Understanding data types: integers, floats, strings, lists, tuples, dictionaries, sets.
+
+>  Integers     :- Understanding data types: integers, floats, strings, lists, tuples, dictionaries, sets.
+                 Example: 5, -10, 1000
+
+>  floats        :- Numbers with a decimal point.
+                Example: 3.14, -2.5, 0.0
+    
+>  strings       :- sequence of characters enclosed in quotes (' ', " ", or ''' ''')
+                Example: "Hello", 'Python', "123"
+
+>  lists         :- An ordered, changeable (mutable) collection. Can hold mixed data types.
+                Syntax: Square brackets []
+                Example: [1, 2, 3], ['a', 10, 3.5]
+
+> tuples        :- An ordered, unchangeable (immutable) collection.
+                Syntax: Round brackets ()
+                Example: (1, 2, 3), ("a", 10)
+
+> dictionaries   :- An unordered collection of key-value pairs.
+                Syntax: Curly braces {}, keys and values separated by :
+                Example: {"name": "John", "age": 30}
+
+
+> sets           :- An unordered, unindexed, and unique collection (no duplicates).
+                Syntax: Curly braces {} or the set() function.
+                Example: {1, 2, 3}, {"a", "b"}
+
+
+B.   Python variables and memory allocation.
+
+
+c.   Python operators: arithmetic, comparison, logical, bitwise
+
+>
+            | Type       | Examples          |              
+            | ---------- | ----------------- | 
+            | Arithmetic | `+ - * / % // **` |              
+            | Comparison | `== != > < >= <=` |              
+            | Logical    | `and or not`      |              
+            | Bitwise    | \`&               | 
+
+
+4*   Conditional Statements :-
+
+
+A.  Introduction to conditionalstatements: if, else, elif
+
+>    Conditional statements are used to make decisions in your program. Based on whether a condition is True or False, the program will execute different blocks of code.
+
+>   IF statements:-  
+                  The if statement checks a condition. If the condition is True, it runs the indented block of code.
+
+    example:-     if condition:
+                  # code to run if condition is True
+
+>   ELSE statements:-
+                The else block runs only if the if condition is False.
+
+    example:-   if condition:
+                    # code if condition is True
+                else:
+                    # code if condition is False
+
+
+>   ELIF statements:- 
+                The elif statement allows you to check multiple conditions one by one.
+
+    example:-   if condition1:
+                    # code if condition1 is True
+                elif condition2:
+                    # code if condition2 is True
+                else:
+                    # code if none of the above conditions are True
+
+
+B. Nested if-else conditions
+
+>    nested if-else is an if or else block inside another if or else block. This allows you to make more detailed decisions based on multiple      conditions.
+
+>   syntex :- 
+                        if condition1:
+                            if condition2:
+                                # Code if both condition1 and condition2 are True
+                            else:
+                                 # Code if condition1 is True, but condition2 is False
+                        else:
+                             # Code if condition1 is False
+
+
+5* Looping (For, While)
+
+
+A. Introduction to for and while loops.
+
+>   for loop :- 
+                used when you know how many times to repeat. Used to iterate over a sequence (like a list, string, or range()).
+
+            example:-   for i in range(5):
+                            print(i)
+>   while loops :-
+                used when you want to repeat until a condition is False. Used when you want to repeat a block of code as long as a condition is True.
+
+            example:-   i = 1
+                        while i <= 5:
+                            print(i)
+                        i += 1
+
+B. How loops work in Python.
+
+>  Loops allow you to execute a block of code repeatedly as long as a condition is met or over a sequence.
+This helps avoid repeating code manually and supports automation and iteration in programs.
+
+Two Main Types of Loops:-
+
+| Loop Type | Purpose                                    |
+| --------- | ------------------------------------------ |
+|  for     | Iterate over a sequence (like list, range)  |
+|  while   | Repeat as long as a condition is  True      |
+
+
+C. Using loops with collections (lists, tuples, etc.)
+
+> Using for Loop with a List
+
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+> Using for Loop with a Tuple
+
+colors = ("red", "green", "blue")
+for color in colors:
+    print(color)
+
+> Using while Loop with Collections
+
+colors = ["red", "green", "blue"]
+i = 0
+while i < len(colors):
+    print(colors[i])
+    i += 1
+
+
+
+6*  Generators and Iterators 
+
+A. Understanding how generators work in Python.
+
+> A generator is a special type of function that yields values one at a time, instead of returning them all at once like a normal function. This makes generators memory-efficient and useful for large data processing.
+
+> Uses yield :- replaces return to produce a series of values
+
+
+B. Difference between yield and return.
+
+> yield:-
+ pauses the function and yields a value.
+ used inn gernerator function.
+ retuns a generator object.
+ yield i in a lop
+
+> return:-
+exit the function and sends back a value.
+used in regular function.
+retuen a single value.
+return x + y
+
+
+C. Understanding iterators and creating custom iterators.
+
+> Iterable :- 
+An object that can be iterated (e.g., list, tuple, string). Has __iter__() method.
+
+>Iterator :- 
+An object that does the iteration. Has both __iter__() and __next__() methods.
+
+
+
+7* Function and Methodes
+
+A. Defining and calling functions in Python.
+
+> A function is a block of code which only runs when it is called.
+> you can pass data,known as parameters,into a function.
+> A function can return data as a result.
+> You define a function using the def keyword
+> def greet():
+    print("Hello, world!")
+
+
+B. Function arguments (positional, keyword, default).
+
+> Positional:-
+func("Amit", 25)	Order matters
+
+> Keyword:-
+func(name="Amit", age=25)	Order doesn’t matter
+
+> Default:- 
+def func(age=18)	Used if no value is passed
+
+
+C. Scope of variables in Python.
+
+> Local         Inside the function/block where it's defined
+> Global	    Throughout the entire file (module)
+> Enclosing	    Inside nested (inner) functions
+> Built-in	    Python's built-in names (like len, range, etc.)
+
+D. Built-in methods for strings, lists, etc.
+
+> lower()	    Converts to lowercase
+> upper()	    Converts to uppercase
+> strip()	    Removes whitespace
+> replace(a)    replaces text
+> split()	    Splits string into list
+> startswith()	Checks if starts with
+> endswith()	Checks if ends with
+
+
+
+8* Control Statements (Break, Continue, Pass)
+
+A.  Understanding the role of break, continue, and pass in Python    loops.
+
+>  Break : -
+Exits the loop immediately, even if the loop condition is still true.
+
+> Continue : -
+Skips the current loop iteration and moves to the next one.
+
+> Pass : -
+Does nothing. It's a placeholder used when a statement is required syntactically but no action is needed.
+
+
+
+9* String Manipulation
+
+
+A.  Understanding how to access and manipulate strings.
+
+>  Strings in Python are sequences of characters, and you can access, slice, and manipulate them in powerful ways.
+
+>text ="hello world"
+print(text.upper())
+print(text.lower())
+print(text.title())
+print(text.captalize) .
+
+
+B. Basic operations: concatenation, repetition, string methods (upper(), lower(), etc.)
+
+>  upper():=
+print(text.upper())
+
+>  lower():=
+print(text.lower())
+
+>  reprat and strip()
+print((text.strip()+"!")*2)
+
+
+C. String slicing.
+
+> String slicing is a way to extract parts (substrings) of a string using a specific syntax.
+
+
+
+10* Advanced Python (map(), reduce(), filter(), Closures and Decorators)
+
+A. How functional programming works in Python.
+
+>Easier to test and debug
+>Reduces side effects and bugs
+>More concise and readable for data processing
+
+B. Using map(), reduce(), and filter() functions for processing data.
+
+> map(function,itreable)
+Applies a function to each item in an iterable (like a list).
+
+>reduce(function, iterable)
+Applies a function cumulatively to reduce the iterable to a single value.
+
+>filter(function, iterable)
+Applies a function cumulatively to reduce the iterable to a single value.
+
+
+C. introduction to closures and decorators
+
+> closures:-
+A closure is a function defined inside another function that remembers the variables from the outer function, even if the outer function has finished executing.
+
+> Decorator:-
+A decorator is a function that modifies or enhances another function without changing its actual code.
+It’s a design pattern built using closures.
+
+
+
