@@ -7,13 +7,15 @@ print(math.ceil(5.9))
 print(math.floor(5.9))
 print(round(5.4))
 print(math.factorial(5))
+print(math.log(10))
+print(math.fabs(120))
+print(math.degrees)
 
 import os
 
 os.mkdir("New Folder")
 os.removedirs("New Folder")
 print(os.getcwd())
-
 
 
 import sys 
