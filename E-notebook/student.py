@@ -18,13 +18,14 @@ while(choice!=4):
         email = input("enter the email please: ")
         student.update({name:{"lastname":lastname,"email":email}})
         
+        
     elif choice ==2:
         print("view students")
         print(student)
     elif choice ==3:
         print("delete")
-        student.clear
+        student.pop({name:{"lastname":lastname}})
     elif choice ==4:
         print("exit the programm")
     else:
-        print("INvaild choice..")
+        print("Invaild choice..")
