@@ -24,12 +24,10 @@
 # a = input("Enter your name : ")
 # print(a)
 
-
-
 # print("Hello \\\\\" Python")
 
 # print("he\bllo")
-
+ 
 
 
 # a = int(input("enter value : "))

@@ -1,5 +1,5 @@
 
-# words = "Sun rises In East"
+words = "Sun rises In East"
 
 # print(len(words))
 # print(words.lower())
