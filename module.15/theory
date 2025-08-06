@@ -1,0 +1,57 @@
+
+Q1. Introduction to the print() function in Python.
+
+-> The print() function in Python is used to display output on the console. 
+It's one of the most commonly used functions in any Python program.
+
+
+Q2. Formatting outputs using f-strings and format().
+
+-> When you want to print variables or values in a structured, readable way, 
+Python gives you two great tools.
+
+
+Q3. Using the input() function to read user input from the keyboard.
+
+-> The input() function is used to take input from the user via the keyboard. 
+Whatever the user types is returned as a string.
+
+
+Q4. Opening files in different modes ('r', 'w', 'a', 'r+', 'w+').
+
+->  "r"       Read only
+    "w"       write only
+    "a"       Append
+    "r+"      read+ write
+    "w+"      write+read
+
+
+Q5. Using the open() function to create and access files.
+
+-> The open() function is the gateway to file handling in Python. You use it to create, read, write, or append files.
+
+
+Q6.  Closing files using close().
+
+-> When you work with files in Python, it’s important to close them  properly after you're done. This ensures that:
+    Data is saved to the disk correctly,
+    System resources are freed,
+    File locks (if any) are released.
+
+
+Q7. Reading from a file using read(), readline(), readlines()
+
+-> read():- Reads all contents of a file as a single string
+-> readline():- Reads only one line at a time. Useful in loops
+-> readlines():- Reads all lines and returns a list where each item is a line.
+
+
+Q8. Writing to a file using write() and writelines().
+
+-> Write(): - Writes one string to a file.
+You must manually add newline characters (\n) if needed.
+-> writelines(): - Writes a list of strings to a file.
+Does not automatically add \n, so include them in the lis
+
+
+Q9. 
