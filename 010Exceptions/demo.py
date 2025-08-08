@@ -43,3 +43,17 @@
 #     print(myl)
 # except NameError as e:
 #     print(e)
+
+
+# try:
+#     number = int(input("Enter a number: "))
+#     print(1 /number)
+# except ZeroDivisionError:
+#     print("You can't divide bt zero IDIOT!")
+
+# except ValueError as e:
+#     print(e)
+# except Exception as e:
+#     print(e)
+# finally:
+#     print("do some clean up")
