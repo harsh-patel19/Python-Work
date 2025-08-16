@@ -1,14 +1,14 @@
 
-# def test():
-#     try:
-#         a = int(input("enter number : "))
-#         return a
-#     except ValueError as e:
-#         print(e)
-#     finally :
-#         print("always exceutable..")
-# k = test()
-# print(k)
+def test():
+    try:
+        a = int(input("enter number : "))
+        return a
+    except ValueError as e:
+        print(e)
+    finally :
+        print("always exceutable..")
+k = test()
+print(k)
 
 
 
