@@ -54,4 +54,101 @@ You must manually add newline characters (\n) if needed.
 Does not automatically add \n, so include them in the lis
 
 
-Q9. 
+Q9. Introduction to exceptions and how to handle them using try, except, and finally.
+
+-> An exception is an error that occurs during program execution.
+Instead of stopping the program immediately, Python lets us handle the error gracefully.
+
+-> We can catch errors using try and except blocks.
+-> he finally block is always executed, whether an error happens or not.
+It is often used for cleanup code (like closing files or database connections).
+
+try → code that may raise an error
+except → code to handle the error
+finally → code that runs no matter what (cleanup, closing resources, etc.)
+
+
+Q10. Understanding multiple exceptions and custom exceptions.
+
+
+-> Multiple Exceptions :-
+                    ometimes, a block of code may raise different types of errors.
+                    We can handle them with multiple except blocks.
+
+-> Custom Exceptions :- 
+                ometimes built-in exceptions are not enough.
+                We can create our own exception classes by inheriting from Exception.
+
+
+Q11. Understanding the concepts of classes, objects, attributes, and methods in Python.
+ 
+-> CLASS :
+            A class is a blueprint or template for creating objects.
+            It defines attributes (data/variables) and methods (functions/behavior)
+
+-> OBJECT :
+            An object is an instance of a class.
+            When we create an object, Python allocates memory and stores actual values in it.
+
+-> ATTRIBUTES : 
+            Attributes are variables inside a class that represent the state or properties of an object.
+            Defined in the __init__() constructor.
+
+-> METHODS :
+            Methods are functions inside a class that define the behavior of objects.
+            The first parameter is always self, which refers to the current object.
+
+
+
+Q12. Difference between local and global variables.
+
+-> GLOBAL VARIABLE :
+
+Declared outside of all functions.
+Accessible anywhere in the program (inside and outside functions).
+Stored in the global scope (lives as long as the program runs).
+
+-> LOCAL VARIABLE :
+
+Declared inside a function.
+Accessible only inside that function.
+Created when the function starts and destroyed when the function ends
+
+
+
+Q13. Single, Multilevel, Multiple, Hierarchical, and Hybrid inheritance in Python.
+
+-> Single	One child, one parent	Child → Parent
+-> Multilevel	Chain of inheritance	Child → Parent → Grandparent
+-> Multiple	One child, multiple parents	Child → (Father + Mother)
+-> Hierarchical	One parent, multiple children	Parent → (Child1 + Child2)
+-> Hybrid	Combination of above	Mix of multiple + multilevel
+
+
+
+
+Q14. Using the super() function to access properties of the parent class.
+
+->  super() is used in inheritance to call methods/attributes from the parent class.
+    It avoids writing the parent class name explicitly.
+    Very useful in constructor chaining and when dealing with multiple inheritance.
+
+
+
+
+Q15. Method overloading: defining multiple methods with the same name but different
+parameters.
+
+
+-> Method overloading means having multiple methods with the same name but different parameters.
+
+-> in Python, it is not directly supported — the last defined method overrides the previous ones.
+
+
+
+
+Q16. Method overriding: redefining a parent class method in the child class.
+
+->Overloading → Same method name, different parameters (compile-time).
+->Overriding → Same method name in parent & child, but child redefines it (runtime).
+->super() lets the child call the parent’s version.
