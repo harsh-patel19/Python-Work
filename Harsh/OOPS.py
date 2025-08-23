@@ -21,17 +21,15 @@
 # Create students class that takes name & marks of 3 subjects as argument in constructor..?
 
 class Student:
-
-    # def __init__(self, name, maths, English, Hindi):
-    #     self.name = name
-    #     self.maths = maths
-    #     self.English = English
-    #     self.Hindi = Hindi
-
     
     def __init__(self, name, marks):
         self.name = name 
         self.marks = marks
+
+    @staticmethod
+    def hello():
+        print("hello")
+
 
     def get_avg(self):
         sum = 0
@@ -43,3 +41,6 @@ s1 = Student("Dhruvika", [100,99,98])
 s1.get_avg()
         
        
+s1.name = "Harsh"
+s1.get_avg()
+s1.hello()
