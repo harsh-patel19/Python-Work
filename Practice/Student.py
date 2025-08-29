@@ -24,8 +24,5 @@
 # s3.display_info()
 
 
-class shoppingcart:
-    def add(self,name,price):
-        self.name = name
-        self.price = price
+
    

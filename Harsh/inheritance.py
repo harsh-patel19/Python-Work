@@ -53,24 +53,28 @@
 # print(car1.type)
 
 
-class Animal:
-    def __init__(self, name):
-        self.name = name 
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name 
 
-    def speak(self):
-        print(f"{self.name} make a sound")
+#     def speak(self):
+#         print(f"{self.name} make a sound")
 
-class Dog(Animal):
-    def speak(self):
-      print(f"{self.name} says Woof!")
+# class Dog(Animal):
+#     def speak(self):
+#       print(f"{self.name} says Woof!")
 
-class Cat(Animal):
-    def speak(self):
-        print(f"{self.name}says Meow!")
+# class Cat(Animal):
+#     def speak(self):
+#         print(f"{self.name}says Meow!")
 
 
-a1 = Dog("tommmy")
-a1.speak()
+# a1 = Dog("tommmy")
+# a1.speak()
 
-a2 = Cat("poppy")
-a2.speak()
+# a2 = Cat("poppy")
+# a2.speak()
+
+
+
+

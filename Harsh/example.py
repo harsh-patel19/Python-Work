@@ -27,8 +27,7 @@
 #     def show_deatils(self):
 #         super().show_deails()
 #         print({self.language})
-
-    
+        
 # c1 = Manager("Harsh",80000,"hR")
 # d1 = Developer("Dhruvika", 750000, "pyhton")
 

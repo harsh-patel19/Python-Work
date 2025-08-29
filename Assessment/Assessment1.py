@@ -1,87 +1,55 @@
 
-# *************** Student Grade Management System *********
+inventory = {
+    "Paracetamol":{"price":2.5, "stock":50},
+    "Amoxicillin":{"price":10,"stock":20},
+}
+
+sales = []
+
+def process_sale():
+    customer = input("Enter customer name: ").strip()
+    medicine = input("Enter medicine name: ").strip().title()
 
 
-# features:-
+    if medicine not in inventory:
+        print(f"Medicine {medicine} not found in inventory.")
+        return
+    
+    try:
+        qty = int(input("Enter Quantitly: "))
+        if qty <= 0:
+            print("quantitly must be greater than 0.")
+            return
+    except ValueError:
+        print("Invaild quantitly. please enter a number.")
+        return
+    
+    if inventory[medicine]["stock"] < qty:
+        print("not enough stock available.")
+        return
+    
+    inventory[medicine]["stock"] -= qty
+    total_price = qty* inventory[medicine]["price"]
 
-# > Add students name and grades.
-# > View all students and their grades.
-# > Update a students
-# > Delete a student 
-# > Calculate marks(pass/fail)
+    sale = {
+        "customer": customer,
+        "medicine": medicine,
+        "quantitly": qty,
+        "total": total_price,
+    }
+    sales.append(sale)  
 
-student_grades = { }
-def add_student(name, grade):
-    student_grades[name] = grade
-    print(f"Added {name} with a {grade}")
+    print("\n bill")
+    print("-"* 30)
+    print(f"customer: {customer}")
+    print(f"medicine: {medicine}")
+    print(f"quantitly: {qty}")
+    print(f"price per unit: &{inventory[medicine]['price']}")
+    print(f"Total Amount: &{total_price}")
+    print(f"date:c{sale['date']}")
+    print("-"*30)
 
-def view_all_students():
-    if student_grades:
-        for name , grade in student_grades.items():
-            print(f"{name} : {grade}")
-    else:
-        print("No Students found!")
-
-def update_students(name,grade):
-    if name in student_grades:
-        student_grades[name] = grade
-        print(f"{name} with marks are updated {grade}")
-    else:
-        print(f"{name} is not found!")
-
-def delete_students(name):
-    if name in student_grades:
-        del student_grades[name]
-        print(f"{name} has been successfully deleted")
-    else:
-        print(f"{name} is not found!")
-
-def calculated_marks(name,grade):
-    if not student_grades:
-        print("no student data avilable.")
-    else:
-        print("\nstudent grades: ")
-        for name, grade in student_grades.items():
-            status = "pass" if grade >=40 else "fail"
-            print(f"{name} - grade: {grade},status: {status}")
-
-def main():
-    while True:
-        print("\n STUDNET GRADES MANAGEMANT SYSTEM")
-        print("1. Add student")
-        print("2. View student")
-        print("3. update student")
-        print("4. delete student")
-        print("5. calculated passing and fail student")
-        print("6. exit")
-
-        choice = int(input("Enter your choice = "))
-        if choice == 1:
-            name = input("Enter student name =")
-            grade = int(input("Enter student " \
-            "grade= ="))
-            add_student(name,grade)
-
-        elif choice == 2:
-            view_all_students()
-
-        elif choice == 3:
-            name = input("Enter student name = ")
-            grade = int(input("Enter student grade ="))
-            update_students(name,grade)
-
-        elif choice == 4:
-            name = input("Enter student name = ")
-            delete_students(name)
-
-        elif choice == 5:
-            name = input("Enter student name = ")
-            grade = int(input("Enter student grade ="))
-            calculated_marks(name,grade)
-
-        elif choice == 6:
-            print("closing the program")
-            break
-        else:
-            print("Invailed choice")
-main()
+def view_inventory():
+    print("\n current Inventory")
+    print("-" *40)
+    print(f"{med: <15}{deatils['price']:<10}{details}")

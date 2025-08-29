@@ -13,3 +13,6 @@ elif marks>=0 and marks<=35:
     print("f")
 else :
     print("invaild marks")
+
+
+
