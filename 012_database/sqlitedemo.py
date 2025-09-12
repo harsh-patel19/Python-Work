@@ -2,18 +2,19 @@ import sqlite3
 
 db = sqlite3.connect("mydata.db")
 
-# db.execute("create table student(id int primary key, name varchar(20), email varchar(30))")
+db.execute("create table student(id int primary key, name varchar(20), email varchar(30))")
 
-# db.execute("insert into student values(2,'krunal','krunal@gamil.com')")
+db.execute("insert into student values(2,'krunal','krunal@gamil.com')")
 
-# db.execute("update student set name='xyz' where id =2")
+db.execute("update student set name='xyz' where id =2")
 
-# db.execute("delete from student where id=2")
+db.execute("delete from student where id=2")
 
-# db.commit()
+db.commit()
 
-data = db.execute("select *from student")
-dt = data.fetchall()
-for i in dt:
-    for k in i:
-        print(k)
+# data = db.execute("select *from student")
+# dt = data.fetchall()
+# for i in dt:
+#     for k in i:
+#         print(k)
+
