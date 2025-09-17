@@ -1,80 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        .tf {
+            width: 200px;
+            height: 30px;
+            border: 1px solid rgb(136, 34, 34);
+            border-radius: 5px;
+            background-color: bisque;
+            color: brown;
+            box-shadow: 2px 3px;
+        }
+    </style> -->
 </head>
+
 <body>
     <a href="index.html">Home</a> |
     <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a>
+    <a href="contact.html">Contact</a> |
+    <a href="Table.html">Table</a>
     <hr>
-    <h1> conatct us page</h1>
+    <h1>Contact us page</h1>
     <hr>
-    <h1>registration form</h1>
+
+    <h1>Registration Form</h1>
 
     <form action="" method="post">
+
         <fieldset>
-    <legend>Reg form</legend>
-    <label for ="">Username</label>
-    <input type="text" id="unmae" placeholder="Enter username" name="unmae">
-    <br><br>
+            <legend>Reg form</legend>
+            <label for="uname">Username</label>
+            <input type="text" id="uname" placeholder="Enter username" name="uname" class="tf"><!-- style="width: 200px; 
+                    height: 30px; 
+                    border: 1px solid rgb(136, 34, 34);
+                    border-radius: 5px;
+                    background-color: bisque;
+                    color: brown;
+                    box-shadow: 2px 3px;
+                    " -->
 
-    <label for ="">Email</label>
-    <input type="text" id="Email" placeholder="Enter Email" name="Email">
-    <br><br>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="text" id="email" class="tf" placeholder="Enter email" name="email">
+            <br><br>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" class="tf" placeholder="enter password" name="pass">
+            <br><br>
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" class="tf" name="phone">
+            <br><br>
+            <label for="">Gender</label>
+            <input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="female">Female
+            <br><br>
+            <label for="">Languages</label>
+            <input type="checkbox" value="guj" name="lang">Gujarati
+            <input type="checkbox" value="hin" name="lang">Hindi
+            <input type="checkbox" value="eng" name="lang">English
+            <br><br>
+            <label for="">Country</label>
+            <select name="country" id="">
+                <option value="1">India</option>
+                <option value="2">USA</option>
+                <option value="3">Canada</option>
+            </select>
+            <br><br>
+            <label for="">Address</label>
+            <textarea name="adr" id=""></textarea>
+            <br><br>
+            <label for="">Image</label>
+            <input type="file" name="file">
+            <br><br>
+            <label for="">Color</label>
+            <input type="color" name="clr">
+            <br><br>
+            <label for="">Birth Date</label>
+            <input type="date" name="bdate">
 
-  
-    <label for ="">Password</label>
-    <input type="text" id="Password" placeholder="Enter Password" name="unmae">
-    <br><br>
-
-    <label for ="">phone</label>
-    <input type="number" id="phone" name="phone">
-    <br><br>
-
-    <label for="">Gender</label>
-    <input type="radio" name="Gender" value="male">male
-    <input type="radio" name="Gender" value="female">female
-    <br><br>
-
-    <label for="">languages</label>
-    <input type="checkbox" value="Guj" name="lang">Gujarati
-    <input type="checkbox" value="hindi" name="lang">hindi
-    <input type="checkbox" value="Eng" name="lang">English
-    <br><br>
-
-    <label for="">country</label>
-    <select name="country" id="">
-        <option value="1">India</option>
-        <option value="2">Usa</option>
-        <option value="3">Canada</option>
-    </select>
-    <br><br>
-
-    <label for="">address</label>
-    <textarea name="adr" id=""></textarea>
-    <br><br>
-
-    <label for="">image</label>
-    <input type="file" name="file">
-    <br><br>
-
-    <label for="">color</label>
-    <input type="color" name="clr">
-    <br><br>
-
-    <label for="">birthdate</label>
-    <input type="date" name="bdate">
-
-    <br><br>
-    <input type="submit">
-    <input type="reset">
-
-    </fieldset>
+            <br><br>
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
     </form>
 
 
 </body>
+
 </html>
