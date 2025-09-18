@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import ttk
 import pymysql
 
+
 con = pymysql.connect(
     host="localhost",
     user="root",
