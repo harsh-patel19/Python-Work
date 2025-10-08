@@ -1,10 +1,24 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User
+from HMAPP.models import *
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 
 def index(request):
-    return render(request,'index.html')
+    Categories = Category.objects.all()
+    products = Product.objects.all()
+    try:
+        cid = int(request.GET['cid'])
+
+        if cid!=0:
+            products = Product.objects.filter(Category_id = cid)
+
+        else:
+            products = Product.objects.all()
+        return render(request,'index.html',{"categories":Categories,"products":products})
+    except Exception as e :
+        return render(request,"index.html",{"categories":Categories,"products":products})
+
 
 def about(request):
     return render(request,'about.html')
