@@ -5,8 +5,8 @@ from django.db import models
 class Department(models.Model):
     name = models.CharField(max_length=20)
   
-    def __str__(self):
-        return super.name
+    # def __str__(self):
+    #     return super.name
 
 class Student(models.Model):
     dept = models.ForeignKey(Department,on_delete=models.CASCADE,null=True)
