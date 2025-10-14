@@ -55,6 +55,32 @@
             })
         }
 
+
+        function search(value) {
+
+            $.get('search', { value }, function (rt) {
+
+                rows = ""
+                rt.data.map(ele => {
+                    rows += `<tr>
+                            <td>${ele.id}</td>
+                            <td>${ele.dept__name}</td>
+                            <td>${ele.name}</td>
+                            <td>${ele.email}</td>
+                            <td>${ele.phone}</td>
+                            <td>${ele.age}</td>
+                            <td><button class='btn btn-primary' onclick='databyid(${ele.id})'>Update</button>
+                                
+                                <button class='btn btn-danger mt-1' onclick='deleteStudent(${ele.id})'>Delete</button></td>
+                            
+                        </tr>`
+                })
+
+                $("#tdata").html(rows)
+            })
+        }
+
+
         function deleteStudent(id) {
             $.get('delete', { id }, function (rt) {
                 alert(rt)
@@ -87,7 +113,7 @@
             var phone = $("#phone").val()
             var age = $("#age").val()
 
-
+            // alert(name)
 
 
             $.post('register', { csrfmiddlewaretoken, id, dept, name, email, phone, age }, function (rt) {
@@ -106,6 +132,25 @@
         }
 
 
+        function checkemail(email) {
+            $.get('checkmail', { email }, function (rt) {
+                if (rt == 'True') {
+                    var email = $("#email")
+                    email.css('color', 'red')
+                    email.css('border', '1px solid red')
+                    $("#emailErr").html("Email already exists !!!")
+                    $("#btn").prop("disabled", true);
+                }
+                else {
+                    $("#btn").prop("disabled", false);
+                    var email = $("#email")
+                    email.css('color', '')
+                    email.css('border', '')
+                    $("#emailErr").html("")
+                }
+            })
+        }
+        
     </script>
 
 
@@ -136,7 +181,9 @@
                 <input type="text" id="name" name="name" placeholder="Enter name" class="form-control">
 
                 <label for="email">email</label>
-                <input type="text" id="email" name="email" placeholder="Entae email" class="form-control">
+                <input type="text" id="email" name="email" placeholder="Entae email" class="form-control"
+                    onkeyup="checkemail(value)">
+                <span id="emailErr" class="text-danger"></span>
 
                 <label for="phone">Phone</label>
                 <input type="text" name="phone" id="phone" placeholder="Enter phone" class="form-control">
@@ -144,13 +191,53 @@
                 <label for="age">Age</label>
                 <input type="text" name="age" id="age" placeholder="Enter age" class="form-control">
                 <br>
-                <input type="submit" class="btn btn-success" onclick="register()">
+
+
+                <!-- <label>Gender</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Other">
+                    <label class="form-check-label" for="Other">Other</label>
+                </div>
+                <br>
+
+                <label>Skills</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Python" id="python" name="skills">
+                    <label class="form-check-label" for="python">Python</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Django" id="django" name="skills">
+                    <label class="form-check-label" for="django">Django</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="JavaScript" id="js" name="skills">
+                    <label class="form-check-label" for="js">JavaScript</label>
+                </div>
+ -->
+
+
+
+
+
+
+
+                <input type="submit" class="btn btn-success" onclick="register()" id="btn">
 
             </div>
 
             <div class="col-1"></div>
             <div class="col-6 card p-5">
                 <h2 align="center">Student Details</h2>
+                <hr>
+                <input type="text" id="search" name="search" placeholder="search here..." class="form-control" onkeyup="search(value)">
                 <hr>
                 <table class="table">
                     <thead>
