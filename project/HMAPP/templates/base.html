@@ -58,7 +58,7 @@
 							<li class="active-menu">
 								<a href="{%url 'index'%}">Home</a>
 								<ul class="sub-menu">
-									<li><a href="index.html">Homepage 1</a></li>
+									<li><a href="{%url 'index'%}">Homepage 1</a></li>
 									<li><a href="{%url 'home02'%}">Homepage 2</a></li>
 									<li><a href="{%url 'home03'%}">Homepage 3</a></li>
 								</ul>
@@ -83,9 +83,21 @@
 							<li>
 								<a href="{%url 'contact'%}">Contact</a>
 							</li>
-								<li>
-								<a href="{%url 'login'%}">login</a>
+							
+							<li>
+							{%if user.is_authenticated%}
+							<li class="nav__item">
+								<a href="{%url 'user-logout'%}" class="nav__link">Logout</a>
 							</li>
+							<li class="nav__item">
+								<a href="{%url 'user-logout'%}" class="nav__link">Welcome, {{user}}</a>
+							</li>
+							{%else%}
+							</li>
+							<li class="nav__item">
+								<a href="{%url 'login'%}"class="nav__link">login</a>
+							</li>
+							{%endif%}
 						</ul>
 					</div>	
 

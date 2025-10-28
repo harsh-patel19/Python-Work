@@ -16,6 +16,11 @@ urlpatterns = [
     path("shopingcart",shopingcart,name="shopingcart"),
     path("login",login,name="login"),
     path("register",register,name="register"),
+    path("user-logout",user_logout,name="user-logout"),
+
+    path("addtocart",add_to_cart,name="addtocart"),
+
+    path("allcategories",allcategories,name="allcategories")
 ]
 
 

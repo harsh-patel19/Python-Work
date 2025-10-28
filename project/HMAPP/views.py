@@ -1,23 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from HMAPP.models import *
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
 
 def index(request):
-    Categories = Category.objects.all()
-    products = Product.objects.all()
-    try:
-        cid = int(request.GET['cid'])
-
-        if cid!=0:
-            products = Product.objects.filter(Category_id = cid)
-
-        else:
-            products = Product.objects.all()
-        return render(request,'index.html',{"categories":Categories,"products":products})
-    except Exception as e :
-        return render(request,"index.html",{"categories":Categories,"products":products})
+    return render(request,"index.html")
 
 
 def about(request):
@@ -78,3 +67,15 @@ def user_login(request):
             return render(request,"login-register.html",{"err":"Invalid Username or Password"})
             
     return render(request,"login-register.html")
+
+def user_logout(request):
+    logout(request)
+    return redirect("index")
+
+def add_to_cart(reuqest):
+    pass
+
+def allcategories(reuqest):
+    categories = Category.objects.all()
+    return JsonResponse({"data":list(categories.values())})
+

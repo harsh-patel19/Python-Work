@@ -6,9 +6,7 @@ class CategoryModel(admin.ModelAdmin):
     list_display=['id','name','image']
 
 class ProductModel(admin.ModelAdmin):
-    list_display=['id','name','price','qty','image','Category','description']
-
-
+    list_display=['id','name','price','qty','image','category']
 
 admin.site.register(Category,CategoryModel)
 admin.site.register(Product,ProductModel)
