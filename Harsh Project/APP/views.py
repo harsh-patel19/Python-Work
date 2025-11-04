@@ -3,27 +3,49 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 from APP.models import *
+from django.http import JsonResponse
 
 
 # Create your views here.
 
 
 def index(request):
+    # categories = Category.objects.all()
+    # products = Product.objects.all()
+    # try:
+    #     cid = int(request.GET['cid'])
+    #     # print(cid)
+    #     # categories = Category.objects.all()
+    #     if cid!= 0:
+    #         products = Product.objects.filter(category_id=cid)
+    #     else:
+    #         products = Product.objects.all()
+    #     return render(request,'index.html',{"categories":categories,
+    #                 "products": products})
+    # except Exception as e:
+    #     return render(request,'index.html',{"categories":categories,
+    #                 "products": products})
+    
+    return render(request,"index.html")
+
+def allcategories(request):
     categories = Category.objects.all()
-    products = Product.objects.all()
-    try:
-        cid = int(request.GET['cid'])
-        # print(cid)
-        # categories = Category.objects.all()
-        if cid!= 0:
-            products = Product.objects.filter(category_id=cid)
-        else:
-            products = Product.objects.all()
-        return render(request,'index.html',{"categories":categories,
-                    "products": products})
-    except Exception as e:
-        return render(request,'index.html',{"categories":categories,
-                    "products": products})
+    return JsonResponse({"data":list(categories.values())})
+
+
+def allproducts(request):
+    cid = request.GET['catid']
+
+    if int(cid) == 0:
+        print(cid)
+        products = Product.objects.all()
+        
+    else:
+        products = Product.objects.filter(Category_id=cid)
+        return JsonResponse({"data":list(products.values())})
+    
+
+
 
 def blog_details(request):
     return render(request,'blog-details.html')
