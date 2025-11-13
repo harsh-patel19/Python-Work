@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from MYAPP.models import *
 from django.http import JsonResponse
 import razorpay
-import datetime
+from datetime import datetime
 
 # Create your views here.
 
@@ -163,5 +163,6 @@ def makeorder(request):
     for cart in cardata:
         OrderDetails.objects.create(order=order,product=cart.product,qty=cart.qty,price=cart.product.price)
         cart.delete()
-        cart.save()
+     
+    # print(rid,payid,oid)
     return HttpResponse("order sucessfully placed!!!")
