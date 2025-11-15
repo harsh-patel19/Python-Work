@@ -27,22 +27,52 @@ def delete_users(request):
 
 class StudentView(APIView):
 
-    def get(request,self):
+    def get(self,request):
         allstudents = Student.objects.all()
         students = StudentSerializer(allstudents,many=True)
         return Response({"students":students.data})
 
-    def post(request,self):
-        return HttpResponse("POST API CALLING!!")
+    def post(self,request):
+        data = StudentSerializer(data = request.data)
+        if not data.is_valid():
+            return Response({"Errors":data.errors,"message":"something went wrong!!!"})
+        else:
+            data.save()
+            return Response({"Data":data.data,"message":"data inserted sucessfully!!!"})
+            
+        # print(request.data)
+        # return HttpResponse("POST API CALLING!!")
     
-    def put(request,self):
-        return HttpResponse("PUT API CALLING!!")
-    
-    def delete(request,self):
-        return HttpResponse("DELETE API CALLING!!")
+class StudentViewId(APIView):
+
+    def get(self,request,id):
+        # return HttpResponse("Calling!!!")
+        student = Student.objects.get(pk=id)
+        ser = StudentSerializer(student)
+        return Response({"data":ser.data})
 
 
+    def put(self,request,id):
+        student = Student.objects.get(pk=id)
+        ser = StudentSerializer(student,data=request.data)
+        if not ser.is_valid():
+            return Response({"Error":ser.errors,"message":"something went wrong"})
+        else:
+            ser.save()
+            return Response({"data":ser.data,"message":"data update sucessfully!!"})
 
 
+    def patch(self,request,id):
+        student = Student.objects.get(pk=id)
+        ser = StudentSerializer(student,data=request.data,partial=True)
+        if not ser.is_valid():
+            return Response({"Error":ser.errors,"message":"something went wrong"})
+        else:
+            ser.save()
+            return Response({"data":ser.data,"message":"data update sucessfully!!"})
 
 
+    def delete(self,request,id):
+        student = Student.objects.get(pk=id)
+        student.delete()
+        return Response({"message":"data delete!!"})
