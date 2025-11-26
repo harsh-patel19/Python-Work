@@ -1,16 +1,20 @@
 from django.shortcuts import render,HttpResponse
-from rest_framework.decorators import api_view,APIView
+from rest_framework.decorators import api_view,APIView,permission_classes
 from myapp.models import *
 from rest_framework.response import Response
 from myapp.serializers import *
-
+from rest_framework.permissions import IsAuthenticated
+# from myapp.permissions import *
 # Create your views here.
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def get_users(request):
     return HttpResponse("GET API CALLING...")
 
+
 @api_view(['POST'])
+# @permission_classes([isAdminUserOnly])
 def post_users(request):
     return HttpResponse("POST API CALLING...")
 
