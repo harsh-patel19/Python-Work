@@ -4,7 +4,7 @@ from myapp.models import *
 from rest_framework.response import Response
 from myapp.serializers import *
 from rest_framework.permissions import IsAuthenticated
-# from myapp.permissions import *
+from myapp.permissions import *
 # Create your views here.
 
 @api_view(['GET'])
@@ -14,7 +14,7 @@ def get_users(request):
 
 
 @api_view(['POST'])
-# @permission_classes([isAdminUserOnly])
+@permission_classes([isAdminUserOnly])
 def post_users(request):
     return HttpResponse("POST API CALLING...")
 
