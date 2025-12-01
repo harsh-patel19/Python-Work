@@ -7,7 +7,7 @@ from django.contrib import messages
 
 # Create your views here.
 
-@login_required(login_url="userlogin")
+# @login_required(login_url="userlogin")
 def index(request):
     return render(request,"index.html")
 
@@ -23,12 +23,12 @@ def reg(request):
         Student.objects.create(name=name,email=email,phone=phone,age=age,image=img)
         return render(request,'index.html',{"msg":"Registration successfully"})
     
-@login_required(login_url="userlogin")
+# @login_required(login_url="userlogin")
 def display(request):
     Students =  Student.objects.all()
     return render(request,'display.html',{"students":Students})
 
-@login_required(login_url="userlogin")
+# @login_required(login_url="userlogin")
 def home(request):
     return render(request,"home.html")
 
