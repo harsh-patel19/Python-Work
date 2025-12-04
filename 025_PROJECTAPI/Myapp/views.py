@@ -23,11 +23,21 @@ class CategoryView(APIView):
 
 
 class CategoryDetailView(APIView):
-
-    def get(self,request,pk):
-        category = self.get_object(pk)
+    def get(self, request, pk):
+        try:
+            category = Category.objects.get(pk)
+        except Category.DoesNotExist:
+            return Response({"error": "Category not found"})
         serializer = CategorySerializer(category)
         return Response(serializer.data)
+
+
+
+
+    # def get(self,request,pk):
+    #     category = self.get_object(pk)
+    #     serializer = CategorySerializer(category)
+    #     return Response(serializer.data)
     
     def put(self,request,pk):
         category = self.get_object(pk)
