@@ -5,7 +5,9 @@ from django.conf.urls.static import static
 
 urlpatterns =[
     path("categories/",CategoryView.as_view()),
-    path("categories/<int:id>/", CategoryDetailView.as_view()),
+    path("categories/<int:pk>/", CategoryDetailView.as_view()),
+    
+    # path("categories/<id>", CategoryDetailView.as_view()),
 ]
 
 

@@ -23,31 +23,26 @@ class CategoryView(APIView):
 
 
 class CategoryDetailView(APIView):
+ 
     def get(self, request, pk):
-        try:
-            category = Category.objects.get(pk)
-        except Category.DoesNotExist:
+        category = self.get_object(pk)
+        if category is None:
             return Response({"error": "Category not found"})
         serializer = CategorySerializer(category)
         return Response(serializer.data)
 
-
-
-
-    # def get(self,request,pk):
-    #     category = self.get_object(pk)
-    #     serializer = CategorySerializer(category)
-    #     return Response(serializer.data)
-    
-    def put(self,request,pk):
+    def put(self, request, pk):
         category = self.get_object(pk)
-        serializer = CategorySerializer(category,data=request.data)
+        if category is None:
+            return Response({"error": "Category not found"})
+        serializer = CategorySerializer(category, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
-        return Response(serializer.errors)
     
-    def delete(self,request,pk):
+    def delete(self, request, pk):
         category = self.get_object(pk)
+        if category is None:
+            return Response({"error": "Category not found"})
         category.delete()
-        return Response({"message":"Category deleted successfully"})
+        return Response({"message": "Category deleted"})
