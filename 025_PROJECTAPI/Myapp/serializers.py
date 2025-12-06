@@ -6,7 +6,6 @@ class CategorySerializer(serializers.ModelSerializer):
         model = Category
         fields = '__all__'
 
-
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
@@ -33,4 +32,4 @@ class UserOrderSerializer(serializers.ModelSerializer):
 class OrderDetailsSerializer(serializers.ModelSerializer):
     class Meta:
         model = OrderDetails
-        fields = '__all__'    
+        fields = '__all__'
